@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Vehical
+{
+public:
+    int seatNumber;
+    char type;
+    char name[100];
+
+    Vehical(int num, char t, char *n)
+    {
+        seatNumber = num;
+        type = t;
+        strcpy(name, n);
+    }
+};
+
+int main()
+{
+    char carName[100] = "toyota x-corola";
+
+    Vehical car(10, 'A', carName);
+    cout << car.name;
+    return 0;
+}
